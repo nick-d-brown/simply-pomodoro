@@ -1,0 +1,13 @@
+#navbarPage{
+  background: none;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  li a{
+    color: white;
+    font-weight: 400;
+    &:hover {
+      border-bottom: #845EC2 solid 2px;
+    }
+  }
+}
