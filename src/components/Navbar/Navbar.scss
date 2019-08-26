@@ -1,4 +1,7 @@
+@import "../../shared.scss";
+
 #navbarPage{
+  font-family: $header-font;
   background: none;
   margin: 0 auto;
   max-width: 800px;
@@ -6,8 +9,22 @@
   li a{
     color: white;
     font-weight: 400;
+    border-bottom: 3px solid transparent;
     &:hover {
       border-bottom: #845EC2 solid 2px;
     }
+  }
+
+  .home-icon{
+    padding: 8px;
+    color: white;
+  }
+
+  .link-container{
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

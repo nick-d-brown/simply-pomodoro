@@ -1,0 +1,16 @@
+
+$header-font:  'Ubuntu', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+.header-font{
+  font-family: $header-font;
+};
+.header-font-force{
+  font-family: $header-font !important;
+};
+.body-font{
+  font-family: $body-font;
+};
+.body-font-force{
+  font-family: $body-font !important;
+};
