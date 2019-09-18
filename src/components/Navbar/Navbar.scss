@@ -24,10 +24,47 @@
     color: white;
   }
 
+  .logo-hamburger-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .link-container{
     max-width: 200px;
     min-width: 200px;
     width: 100%;
     float: right;
+  }
+
+  @media screen and (max-width: 990px) {
+    // bootstrap override
+    .navbar-collapse{
+      background-color: #2d272752;
+      width: 100%;
+      max-width: 100%;
+      margin: 10px auto;
+      border-radius: 2px;
+      padding: 5px;
+      text-align: center;
+      &.show{
+        background-color: #2d272752;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+        
+        li{
+          width: 25%;
+          margin: 0 auto;
+        }
+
+        a{
+          width: 100%;
+        }
+      }
+    }
   }
 }

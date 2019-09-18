@@ -1,0 +1,43 @@
+
+@import "../../../shared.scss";
+
+#MessageBoard{
+  
+  background-color: #2d272752;
+  width: 80%;
+  max-width: 30rem;
+  margin: 10px auto;
+  font-size: 0.8em;
+  font-family: $body-font;
+  position: relative;
+  top: 50%;
+
+  // Bootstrap override
+  .card{
+    background-color: #ffffff08;
+  }
+
+  .card-title-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    .card-title{
+      font-family: $header-font;
+      padding: 0 3%;
+      font-weight: 600;
+      font-size: 2em;
+      &.active-focus{  
+        color: #ffc662;
+      }
+      &.active-relax{  
+        color: #bb4798;
+      }
+    }
+  }
+
+  .coming-soon{
+    text-align: center;
+  }
+
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import './NotFound.scss';
+import pageNotFoundImage from "./../../images/3auam8.jpg";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Not Found</h1>
-    </div>
+function NotFound() {
+  return (<div classname="image-container" id="notFoundPage">
+            <img src={pageNotFoundImage} alt="Page not found image."></img>
+          </div>
   );
 }
 
-export default App;
+export default NotFound;

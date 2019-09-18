@@ -1,0 +1,51 @@
+
+
+#aboutPage{
+  background: none;
+  margin: 75px auto;
+  max-width: 800px;
+  width: 100%;
+
+  // Bootstrap override
+  .card{
+    background-color: #2d272752;
+    color: white;
+    display: flex;
+    .card-body{
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+    }
+  }
+
+  .x-center-y-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+    border-radius: 50%;
+    padding: 25px;
+  }
+
+  .card-img{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 770px) {
+    .card-img{
+      width: 50%;
+    }
+  
+  }
+
+  @media screen and (max-width: 500px) {
+    .card-img{
+      width: 70%;
+    }
+  
+  }
+
+}

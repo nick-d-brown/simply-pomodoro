@@ -4,8 +4,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
   return (
-      <footer className="" id="footerPage">
-        <p><Link className="nav-link" to="/about">About Us</Link></p>
+      <footer className="d-flex" id="footerPage">
+        <div className="md-auto d-flex align-items-center justify-content-center link-container">
+          <p>🤙 Created by Nick 🤙</p>
+        </div>
       </footer>
   );
 }

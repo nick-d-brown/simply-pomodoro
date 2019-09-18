@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 import MessageCard from './../SupportingComponents/MessageCard/MessageCard';
+import TimeclockCard from './../SupportingComponents/TimeclockCard/TimeclockCard';
+import MessageBoard from './../SupportingComponents/MessageBoard/MessageBoard';
 import CookieBanner from 'react-cookie-banner';
 
 
@@ -15,7 +17,7 @@ class App extends React.Component {
   state = {
     howThisWorks: {
       header: 'How does this work?!',
-      body: 'This app is meant to be a continuous pomodoro timer. It is running 24/7 at 25 minute work segments and 5 minute rest segments. This way everyone can be in sync with their work times!',
+      body: 'This app is meant to be a continuous pomodoro timer. It is running 24/7 at 25 minute focus segments and 5 minute relax segments. This way everyone can be in sync with their work times!',
       confirmContent: 'Got It!',
       
     },
@@ -74,6 +76,43 @@ class App extends React.Component {
 
   render() {
 
+    const cookieBannerStyles = {
+      banner: {  
+        textAlign: 'start', 
+        backgroundColor: 'rgba(45, 39, 39, 0.33)', 
+        width: '60%',
+        height: '100%',
+        bottom: '0',
+        right: '0',
+        fontSize: '0.8em',
+        left: '0',
+        padding: '5px',
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        flexDirection: 'row',
+        borderRadius: '2px',
+        margin: '0 auto'
+        },
+      message: { 
+        fontWeight: 200,
+        lineHeight: 'normal',
+        display:'inline-flex',
+        margin: '0px 5px',
+        width: '80%'
+       },
+      button: {
+        fontSize: '10px', 
+        padding: '0px 6px',
+        position: 'relative',
+        top: '0',
+        right: '0',
+        margin: '0px 5px',
+        display: 'flex',
+
+        }
+    };
+
     let showIntro;
     if (this.state.hasReadIntro !== true) {
       showIntro = (
@@ -92,42 +131,11 @@ class App extends React.Component {
     return (
     <div className="appPage" id="appPage">
       {showIntro}
+      <TimeclockCard />
+      <MessageBoard />
       <CookieBanner
-      styles={{
-        banner: { 
-          backgroundColor: 'rgba(60, 60, 60, 0.8)', 
-          position: 'absolute', 
-          textAlign: 'start', 
-          backgroundColor: 'rgba(60, 60, 60, 0.8)', 
-          width: '100%',
-          height: '10%',
-          bottom: '0',
-          right: '0',
-          fontSize: '0.8em',
-          left: '0',
-          padding: '0 0 0 1%',
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignItems: 'center'
-          },
-        message: { 
-          fontWeight: 200,
-          lineHeight: 'normal',
-          display:'flex',
-          width: '80%'
-         },
-        button: {
-          fontSize: '10px', 
-          padding: '0px 6px',
-          position: 'relative',
-          top: '0',
-          right: '0',
-          margin: '0',
-          display: 'flex',
-
-          }
-      }}
-      message="We use cookies to ensure that we give you the best experience on our website. Click on the 'About Us' tab for more information."
+      styles={cookieBannerStyles}
+      message="By using this site you agree to the use of cookies for analytics, personalized content and ads."
       onAccept={() => {}}
       dismissOnScroll={false}
       cookie="user-has-accepted-cookies" />

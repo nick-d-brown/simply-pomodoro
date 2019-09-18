@@ -3,12 +3,17 @@
 
 #MessageCard{
   
-  background: #ffffffbd;
+  background: #2d272752;
   width: 100%;
   max-width: 30rem;
-  margin: 0 auto;
+  margin: 10px auto;
   font-size: 0.8em;
   font-family: $body-font;
+
+  // Bootstrap override
+  .card{
+    background-color: #ffffff08;
+  }
 
   .card-title{
     font-size: 1.5em;
