@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Simply Pomodoro
+An open source time management app.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## :mag: Table of contents :mag:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### [1-Description](https://github.com/nick-d-brown/simply-pomodoro#1-description-page_facing_up)
+### [2-Technologies](https://github.com/nick-d-brown/simply-pomodoro#2-technologies--computer)
+### [3-Challenges](https://github.com/nick-d-brown/simply-pomodoro#3-challenges-screamboom)
+### [4-Issues](https://github.com/nick-d-brown/simply-pomodoro#4-issues-questionexclamation)
+### [5-Desired Features](https://github.com/nick-d-brown/simply-pomodoro#5-desired-features-star2)
+### [6-Contributors](https://github.com/nick-d-brown/simply-pomodoro#6-contributors-raised_hands)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+ ---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1-Description :page\_facing\_up:
 
-### `npm run eject`
+This app is as simple as its name, a non-stop focus/relax pomodoro timer. The pomodoro technique is productivity methodology where a user focuses for 25 minutes, then resting for 5 minutes. This is done three times and is then followed by a 15 minute "long" break. I enjoy using this technique for focusing at work, but I noticed two main issues with the system. First, our team was never in sync. No one knew when I was working/focusing and likewise I never knew when was an ok time to have small talk with my co-workers. Second, sometimes I wasn't ready to stop working and take a 15 minute break. Enter the idea.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The pomodoro timer created by this app is unlike others in that it is constantly running. This solves the first problem because the timer serves as a constant and universal time source with which teams can align their schedules. Much as a pianist uses a metronome to get on beat when playing a song, teams can finally achieve a synced workflow.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How is the second problem solved? The timer has alternating 25 minute focus and 5 minute relax cylces. Unlike a regular pomodoro there is no 15 minute breaks. Because of the timer is constantly running, user's have the ability to take longer breaks whenever they need them. This way you can stay in the flow longer, or break away sooner if you need to get away from a problem for a bit.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you are interested in running the application, pull down the repository and run "npm start" in your command line. If you wish to contribute, feel free to create a pull request! and finally look forward to the announcement of the live website for you to use at work!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> **Note:** Below are images showcasing the working project.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![Timer Veiw](https://github.com/nick-d-brown/simply-pomodoro/blob/master/assets/MainPageScreenshot.png)
+![About View](https://github.com/nick-d-brown/simply-pomodoro/blob/master/assets/AboutPageScreenshot.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### 2-Technologies  :computer:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  This project utilizes the following technologies:
+  > **Note: Delete this note and the following technologies that do not apply.**
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+- Vanilla JavaScript
+- [Node.js](https://nodejs.org/en/)
+- [Sass](https://sass-lang.com/)
+- [React](https://reactjs.org/)
+- [ES6](http://es6-features.org/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+---
 
-### `npm run build` fails to minify
+### 3-Challenges :scream::boom:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> **Note:** This section is meant for beginners an idea of what the *crux* technology was for this project. Ideally by seeing this first they will be able tackle the hard problem first to start the learning/absorption process as soon as possible.
+
+This project has acted as a great refresher. I have used react in the past, but after about a year writing solely AngularJS, C#, and SQL it was time to brush of the cobwebs. The biggest challenge for this project was switching from an "AngularJS mindset" to a "React mindset". With AngularJS wide range of built in "helpers" like ng-class and ng-hide, it was a little tricky having to manually account for such things again. In addition to this, state management is also a slightly different game between the two technologies. Regardless, after reacquainting myself, writing code in React began to feel natural again. It just comes to show how important it is not to let "old" skills fall by the wayside.
+
+### 4-Issues :question::exclamation:
+
+  Currently there are no known issues that need to be resolved. If you find an issue please submit it using the issues tab, or contact [Nick Brown](https://github.com/nick-d-brown/).
+
+---
+
+### 5-Desired Features :star2:
+
+  Below is a list of possible features that we would like to add to the project. If You would like to propose a feature to add please feel free to create a PR to add it to the list. **We love it when others can help propose ideas!**
+
+
+1.	Live environment hosted on a Digital Ocean server (coming soon!)
+
+
+---
+
+### 6-Contributors :raised_hands:
+
+- [Nick Brown](https://github.com/nick-d-brown/)
+
+> **PS:** If you would like to contribute please contact Nick Brown on GitHub or at n.brown.professional@gmail.com. We welcome bot first time contributors and experienced developers with critical feedback.
+
+---
+
+## Thanks for visiting!
+### [Top of Page](https://github.com/nick-d-brown/simply-pomodoro#simply-pomodoro)
